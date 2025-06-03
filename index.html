@@ -1,89 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memory-BP</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Memory-BP</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-    <div class="navegador">
-          <p>Inicio</p>
-          <p>Quem somos</p>
-          <p>Cursos</p>
-          <p>seguimentos</p>
-          <p>serviços</p>
-    </div>
+  <nav class="navegador">
+    <ul>
+      <li><a href="#">Início</a></li>
+      <li><a href="#">Quem somos</a></li>
+      <li><a href="#">Cursos</a></li>
+      <li><a href="#">Segmentos</a></li>
+      <li><a href="#">Serviços</a></li>
+    </ul>
+  </nav>
 
+  <div class="background-container">
+    <img src="./entrada_iema.bp.png" alt="Imagem de fundo" />
+  </div>
 
-    <div class="background-container">
-        <img src="./entrada_iema.bp.png" alt="Imagem de fundo">
-    </div>
-
-
-     <div class="degrade"></div>
-
-<div class="conteudo">
+  <div class="conteudo">
     <div class="imagem-com-elipse">
-        <img class="img_1" src="./patio.png" alt="Imagem do pátio da escola">
-        <img class="elipse" src="./Ellipse_1.png" alt="Ellipse azul">
+      <img class="img_1" src="./patio.png" alt="Imagem do pátio da escola" />
+      <img class="elipse" src="./Ellipse_1.png" alt="Ellipse azul" />
     </div>
     <div class="info">
-        <h1>Quem Somos?</h1>
-        <p>O IEMA Pleno Barcelar Portela oferece uma formação de qualidade, unindo ensino integral e técnico. A escola prepara os alunos tanto para o ingresso no mercado de trabalho quanto para a continuidade dos estudos, por meio de estágios que fortalecem suas habilidades práticas e profissionais.</p>
+      <h1>Quem Somos?</h1>
+      <p>O IEMA Pleno Barcelar Portela oferece uma formação de qualidade, unindo ensino integral e técnico. A escola prepara os alunos tanto para o ingresso no mercado de trabalho quanto para a continuidade dos estudos, por meio de estágios que fortalecem suas habilidades práticas e profissionais.</p>
     </div>
-</div>
+  </div>
 
-
- <div class="slideshow-container">
-        <div class="slide active">
-            <div class="slide_informatica">
-                <img src="./lab.informatica.png" alt="Imagem do laboratório de informática para internet">
-                <img src="./Ellipse_2.png" alt="Elipse amarela">
-                <h2>Informática para Internet</h2>
-                <p>O curso técnico em Informática oferece uma formação prática em design e programação. Nele, o aluno aprende a criar interfaces usando o Figma e desenvolve sites e sistemas com linguagens como HTML, CSS, JavaScript e Python.</p>
-            </div>
-        </div>
-
-        <div class="slide">
-            <div class="slide_mecanica">
-                <img src="./lab.mecanica.png" alt="Imagem do laboratório de mecânica">
-                <img src="./Ellipse_3.png" alt="Elipse amarela">
-                <h2>Mecânica</h2>
-                <p>O curso Técnico em Mecânica forma profissionais para atuar na produção, operação e manutenção de máquinas e sistemas mecânicos. O aluno aprende a interpretar desenhos técnicos e aplicar normas de segurança.</p>
-            </div>
-        </div>
-
-        <div class="slide">
-            <div class="slide_edificacoes">
-                <img src="" alt="Imagem do laboratório de edificações">
-                <img src="./Ellipse_4.png" alt="Elipse amarela">
-                <h2>Edificações</h2>
-                <p>O curso Técnico em Edificações prepara profissionais para atuar no planejamento, execução e fiscalização de obras civis. O aluno aprende sobre projetos arquitetônicos, materiais e normas técnicas.</p>
-            </div>
-        </div>
-
-        <div class="slide">
-            <div class="slide_eletromecanica">
-                <img src="" alt="Imagem do laboratório de eletromecânica">
-                <img src="./Ellipse_5.png" alt="Elipse amarela">
-                <h2>Eletromecânica</h2>
-                <p>O curso de Eletromecânica forma profissionais para atuar na instalação, operação e manutenção de sistemas com componentes elétricos e mecânicos. O foco é prático e voltado à indústria.</p>
-            </div>
-        </div>
-
-        <button class="prev">&#10094;</button>
-        <button class="next">&#10095;</button>
+  <div class="slideshow-container">
+    <div class="slide active">
+      <div class="slide_informatica">
+        <img src="./lab.informatica.png" alt="Laboratório de informática" />
+        <img src="./Ellipse_2.png" alt="Elipse amarela" />
+        <h2>Informática para Internet</h2>
+        <p>Curso com foco em design, programação (HTML, CSS, JS, Python) e criação de interfaces com Figma.</p>
+      </div>
     </div>
 
-    <script src="carousel.js"></script>
-</body> 
+    <div class="slide">
+      <div class="slide_mecanica">
+        <img src="./lab.mecanica.png" alt="Laboratório de mecânica" />
+        <img src="./Ellipse_3.png" alt="Elipse amarela" />
+        <h2>Mecânica</h2>
+        <p>Curso técnico voltado à operação e manutenção de sistemas mecânicos, com forte base prática.</p>
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="slide_edificacoes">
+        <img src="./lab.edificacoes.png" alt="Laboratório de edificações" />
+        <img src="./Ellipse_4.png" alt="Elipse amarela" />
+        <h2>Edificações</h2>
+        <p>Curso que prepara para atuar em obras civis, com aprendizado em projetos, topografia e segurança.</p>
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="slide_eletromecanica">
+        <img src="./lab.eletromecanica.png" alt="Laboratório de eletromecânica" />
+        <img src="./Ellipse_5.png" alt="Elipse amarela" />
+        <h2>Eletromecânica</h2>
+        <p>Instalação, operação e manutenção de sistemas elétricos e mecânicos, com foco em automação industrial.</p>
+      </div>
+    </div>
+
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </div>
+
+  <script src="carousel.js"></script>
+</body>
 </html>
