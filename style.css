@@ -248,3 +248,17 @@ button.prev:hover, button.next:hover {
     padding: 12px;
   }
 }
+
+
+
+
+.info_protagonismo .box-1 img {
+  width:500px;
+  height: auto;
+}
+
+
+.info_protagonismo .box-2 img {
+  width: 200px;
+  height: auto;
+}
