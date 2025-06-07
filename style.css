@@ -60,12 +60,9 @@ html, body {
   padding: 150px 60px 60px;
 }
 
-
 .img_1 {
   width: 500px;
 }
-
-
 
 .info {
   max-width: 500px;
@@ -82,18 +79,6 @@ html, body {
   color: #fff;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* SLIDES */
 
 /*nao apagar*/
@@ -104,7 +89,7 @@ html, body {
 /*nao mecher*/
 .slideshow-container {
   position: relative;
-  height: 800px;
+  height: 600px;
   background: #145474;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -129,11 +114,10 @@ html, body {
 
 /* Imagem */
 .slide img {
-  width: 500px; /* Ajuste o tamanho conforme achar melhor */
+  width: 500px;
   border-radius: 8px;
 }
 
-/* Texto */
 .slide h2 {
   font-size: 2rem;
   margin-bottom: 20px;
@@ -143,10 +127,8 @@ html, body {
 .slide p {
   font-size: 1.2rem;
   line-height: 1.5;
-  max-width: 400px; /* Para limitar a largura do texto */
+  max-width: 400px;
 }
-
-
 
 /*botoes  nao mecher*/ 
 button.prev,
@@ -252,6 +234,24 @@ button.prev:hover, button.next:hover {
 
 
 
+
+.info_protagonismo .box-1 {
+  position: relative;
+  height: 500px;
+  padding: 20px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+  gap: 40px;
+}
+
+.info_protagonismo .box-1 p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  max-width: 400px;
+}
+
 .info_protagonismo .box-1 img {
   width:500px;
   height: auto;
@@ -261,4 +261,20 @@ button.prev:hover, button.next:hover {
 .info_protagonismo .box-2 img {
   width: 200px;
   height: auto;
+}
+.info_protagonismo .box-2 {
+  position: relative;
+  height: auto;
+  padding: 60px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.info_protagonismo .box-2 h1 {
+  margin-left: 200px;
+}
+.info_protagonismo .box-2 .prot1  img {
+  margin-left: 200px;
+  margin-top: 40px;
 }
