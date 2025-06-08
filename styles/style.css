@@ -10,10 +10,6 @@ body {
   color: #fff;
 }
 
-html, body {
-  height: 100vh;
-}
-
 .navegador {
   background-image: linear-gradient(180deg, #000000 15%, transparent 100%);
   color: antiquewhite;
@@ -27,7 +23,7 @@ html, body {
 .navegador ul {
   list-style: none;
   display: flex;
-  justify-content: center;
+margin-left: 100px;
   gap: 20px;
   flex-wrap: wrap;
 }
@@ -38,7 +34,7 @@ html, body {
   font-weight: bold;
 }
 .img {
-  width: 150px;
+  width: 100px;
   margin-top: 0;
   position: absolute;
   z-index: 11;
@@ -179,69 +175,6 @@ button.prev:hover, button.next:hover {
   background-color: rgba(0,0,0,0.7);
 }
 
-
-
-
-
-
-
-/* RESPONSIVO */
-@media (max-width: 768px) {
-  
-
-  .conteudo {
-    flex-direction: column;
-    align-items: center;
-    padding-top: 140px;
-    text-align: center;
-  }
-
-  .conteudo .inicio img{
-    width: 80%;
-  }
-
-  .info {
-    max-width: 90%;
-  }
-
-  .info p {
-    max-width: 600px;
-  }
-
-  .background-container {
-    position: relative;
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-  }
-
-  .slideshow-container {
-    height: auto; /* Não força altura grande em telas pequenas */
-    padding: 10px;
-  }
-
-  .slide > div {
-    flex-direction: column; /* Muda de linha: imagem em cima, texto embaixo */
-    align-items: center;
-    text-align: center;
-  }
-
-  .slide img {
-    width: 90%; /* Ajusta imagem para caber na tela */
-  }
-
-  .texto-slide {
-    max-width: 90%;
-  }
-
-  button.prev,
-  button.next {
-    font-size: 20px;
-    padding: 12px;
-  }
-}
-
 .box-1 {
   position: relative;
   height: 500px;
@@ -285,9 +218,6 @@ button.prev:hover, button.next:hover {
   margin-left: 200px;
   margin-top: 40px;
 }
-
-
-
 
 .container {
   display: flex;
