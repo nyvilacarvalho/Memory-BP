@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #33A5CE;
+  background-color: #1A7D9F;    
   font-family: "Open Sans", sans-serif;
   color: #fff;
 }
@@ -37,6 +37,12 @@ html, body {
   text-decoration: none;
   font-weight: bold;
 }
+.img {
+  width: 150px;
+  margin-top: 0;
+  position: absolute;
+  z-index: 11;
+}
 
 .background-container {
   position: relative;
@@ -66,6 +72,10 @@ html, body {
 
 .info {
   max-width: 500px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+  backdrop-filter: blur(5px);
 }
 
 .info h1 {
@@ -178,6 +188,7 @@ button.prev:hover, button.next:hover {
 /* RESPONSIVO */
 @media (max-width: 768px) {
   
+
   .conteudo {
     flex-direction: column;
     align-items: center;
@@ -185,7 +196,7 @@ button.prev:hover, button.next:hover {
     text-align: center;
   }
 
-  .imagem-com-elipse {
+  .conteudo .inicio img{
     width: 80%;
   }
 
@@ -231,11 +242,7 @@ button.prev:hover, button.next:hover {
   }
 }
 
-
-
-
-
-.info_protagonismo .box-1 {
+.box-1 {
   position: relative;
   height: 500px;
   padding: 20px;
@@ -246,23 +253,22 @@ button.prev:hover, button.next:hover {
   gap: 40px;
 }
 
-.info_protagonismo .box-1 p {
+.box-1 p {
   font-size: 1.5rem;
   line-height: 1.5;
   max-width: 400px;
 }
 
-.info_protagonismo .box-1 img {
+.box-1 img {
   width:500px;
   height: auto;
 }
 
-
-.info_protagonismo .box-2 img {
+.alunos_protagonistas img {
   width: 200px;
   height: auto;
 }
-.info_protagonismo .box-2 {
+.alunos_protagonistas {
   position: relative;
   height: auto;
   padding: 60px;
@@ -271,10 +277,69 @@ button.prev:hover, button.next:hover {
   flex-direction: column;
 }
 
-.info_protagonismo .box-2 h1 {
+.alunos_protagonistas h1 {
   margin-left: 200px;
 }
-.info_protagonismo .box-2 .prot1  img {
+
+.alunos_protagonistas .prot1  img {
   margin-left: 200px;
   margin-top: 40px;
+}
+
+
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #1A7D9F;
+  gap: 40px;
+}
+
+.image-section {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-image {
+  width: 100%;
+  max-width: 700px;
+}
+
+.content-section {
+  flex: 2 1 400px;
+  color: white;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 50px;
+}
+
+.info-box {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+  backdrop-filter: blur(5px);
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
 }

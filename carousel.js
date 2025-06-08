@@ -1,32 +1,46 @@
-let slideIndex = 0;
-const slides = document.querySelectorAll('.slide');
-const prevBtn = document.querySelector('.prev');
-const nextBtn = document.querySelector('.next');
+function createSlideshow(containerId) {
+  const container = document.getElementById(containerId);
+  const slides = container.querySelectorAll('.slide');
+  const prevBtn = container.querySelector('.prev');
+  const nextBtn = container.querySelector('.next');
+  let slideIndex = 0;
+  let interval;
 
-function showSlide(index) {
+  function showSlide(index) {
     slides.forEach((slide, i) => {
-        slide.classList.remove('active');
-        if (i === index) {
-            slide.classList.add('active');
-        }
+      slide.classList.toggle('active', i === index);
     });
-}
+  }
 
-function nextSlide() {
+  function nextSlide() {
     slideIndex = (slideIndex + 1) % slides.length;
     showSlide(slideIndex);
-}
+  }
 
-function prevSlide() {
+  function prevSlide() {
     slideIndex = (slideIndex - 1 + slides.length) % slides.length;
     showSlide(slideIndex);
+  }
+
+  prevBtn.addEventListener('click', () => {
+    prevSlide();
+    resetInterval();
+  });
+
+  nextBtn.addEventListener('click', () => {
+    nextSlide();
+    resetInterval();
+  });
+
+  function resetInterval() {
+    clearInterval(interval);
+    interval = setInterval(nextSlide, 5000);
+  }
+
+  showSlide(slideIndex);
+  interval = setInterval(nextSlide, 5000);
 }
 
-prevBtn.addEventListener('click', prevSlide);
-nextBtn.addEventListener('click', nextSlide);
-
-// Troca automática de slide a cada 5 segundos
-setInterval(nextSlide, 5000);
-
-// Mostra o primeiro slide ao iniciar
-showSlide(slideIndex);
+// Inicialize ambos slideshows
+createSlideshow('slideshow-cursos');
+createSlideshow('slideshow-projetos');

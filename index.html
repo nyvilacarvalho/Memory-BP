@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Memory-BP</title>
+  <link rel="icon" type="image/png" href="./assets/logo_Bacelar_Portela.png">
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,13 +22,15 @@
     </ul>
   </nav>
 
+  <img class="img" src="./assets/logo_Bacelar_Portela.png" alt="logo do iema pleno bacelar postela">
+
   <div class="background-container">
-    <img src="./entrada_iema.bp.png" alt="Imagem de fundo" />
+    <img src="./assets/entrada_iema.bp.png" alt="Imagem de fundo" />
   </div>
 
   <div class="conteudo">
     <div class="inicio">
-      <img class="img_1" src="./patio.png" alt="Imagem do pátio da escola" />
+      <img class="img_1" src="./assets/patio.png" alt="Imagem do pátio da escola" />
     </div>
     <div class="info">
       <h1>Quem Somos?</h1>
@@ -35,20 +38,11 @@
     </div>
   </div>
 
-
-
-
-
-
-
-
-
-
-
-  <div class="slideshow-container">
+  <!-- PRIMEIRO SLIDESHOW -->
+  <div class="slideshow-container" id="slideshow-cursos">
     <div class="slide active">
       <div class="slide_informatica">
-        <img src="./lab.informatica.png" alt="Laboratório de informática" />
+        <img src="./assets/lab.informatica.png" alt="Laboratório de informática" />
         <div>
           <h2>Informática para Internet</h2>
           <p>O curso técnico em Informática oferece uma formação prática em design e programação. Nele, o aluno aprende a criar interfaces usando o Figma e desenvolve sites e sistemas com linguagens como HTML, CSS, JavaScript e Python. É uma preparação completa para atuar em diversas áreas da tecnologia.</p>
@@ -58,7 +52,7 @@
 
     <div class="slide">
       <div class="slide_mecânica">
-        <img src="./lab.mecanica.png" alt="Laboratório de mecânica" />
+        <img src="./assets/lab.mecanica.png" alt="Laboratório de mecânica" />
         <div>
           <h2>Mecânica</h2>
           <p>O curso Técnico em Mecânica forma profissionais para atuar na produção, operação e manutenção de máquinas e sistemas mecânicos. O aluno aprende a interpretar desenhos técnicos, usinar peças, operar equipamentos e aplicar normas de segurança. É uma formação prática, com ampla demanda na indústria e excelentes oportunidades no mercado de trabalho.</p>
@@ -68,7 +62,7 @@
 
     <div class="slide">
       <div class="slide_edificacoes">
-        <img src="./lab.edificaçoes.png" alt="Laboratório de edificações" />
+        <img src="./assets/lab.edificaçoes.png" alt="Laboratório de edificações" />
         <div>
           <h2>Edificações</h2>
           <p>O curso Técnico em Edificações prepara profissionais para atuar no planejamento, execução e fiscalização de obras civis. O aluno aprende sobre projetos arquitetônicos, materiais de construção, topografia, desenho técnico e normas de segurança. Com forte base prática, o curso oferece diversas oportunidades no setor da construção civil, em empresas públicas e privadas.</p>
@@ -78,7 +72,7 @@
 
     <div class="slide">
       <div class="slide_eletromecanica">
-        <img src="./lab.mecanica.png" alt="Laboratório de eletromecânica" />
+        <img src="./assets/lab.mecanica.png" alt="Laboratório de eletromecânica" />
         <div>
           <h2>Eletromecânica</h2>
           <p>O curso de Eletromecânica forma profissionais para atuar na instalação, operação e manutenção de sistemas que envolvem componentes elétricos e mecânicos. Com foco prático, o aluno aprende sobre elétrica, mecânica e automação. É uma área com boa demanda no mercado, principalmente na indústria.</p>
@@ -88,7 +82,7 @@
 
      <div class="slide">
       <div class="slide_eletrotecina">
-        <img src="./lab.mecanica.png" alt="Laboratório de eletrotecinica" />
+        <img src="./assets/lab.mecanica.png" alt="Laboratório de eletrotecinica" />
         <div>
           <h2>eletrotécinica</h2>
           <p>O curso de Eletrotécnica forma profissionais para atuar na instalação, operação e manutenção de sistemas elétricos em baixa e média tensão. Com foco prático, o aluno aprende sobre comandos elétricos, máquinas, instalações e distribuição de energia. É uma área com boa demanda, principalmente na indústria, construção civil e empresas de energia.</p>
@@ -96,33 +90,61 @@
       </div>
     </div> 
 
-
     <button class="prev">&#10094;</button>
     <button class="next">&#10095;</button>
   </div>
-  
-  <div class="info_protagonismo">
-    <div class="box-1">
-      <img src="./protagonistas.bp.png" alt="foto oficial dos protagonista do eima pleno bacelar portela">
-      <p>Os alunos do IEMA se destacam por protagonismo em projetos sociais, inovação, inclusão e competições internacionais, mostrando liderança, criatividade e preparo para o futuro.</p>
-    </div>
 
-    <div class="box-2">
-      <div>
-        <h1>Alunos protagonistas</h1>
-      </div>
-      <div class="prot1">
-        <img src="./ptgnt.1.png" alt="">
-        <img src="./ptgnt.2.png" alt="">
-        <img src="./ptgnt.3.png" alt="">
-      </div>
-      <div class="prot1">
-        <img src="./ptgnt.4.png" alt="">
-        <img src="./ptgnt.5.png" alt="">
-        <img src="./ptgnt.6.png" alt="">
+
+  <div class="container">
+    <div class="image-section">
+      <img src="./assets/protagonistas.bp.png" alt="Foto dos alunos" class="main-image">
+    </div>
+    <div class="content-section">
+      <h1>Educação de qualidade</h1>
+      <p class="subtitle">Aqui acreditamos em nossos alunos!</p>
+
+      <div class="info-grid">
+        <div class="info-box">
+          <div class="icon">🏆</div>
+          <h3>Corpo Docente Qualificado</h3>
+          <p>Contamos com professores altamente capacitados, que proporcionam uma educação de alta qualidade e preparam os alunos para os desafios do mercado de trabalho.</p>
+        </div>
+
+        <div class="info-box">
+          <div class="icon">🤝</div>
+          <h3>Estágio e Parcerias</h3>
+          <p>Estabelecemos parcerias com empresas para facilitar programas de estágio, dando aos alunos a oportunidade de ganhar experiência prática e conectar-se com o mercado de trabalho.</p>
+        </div>
+
+        <div class="info-box">
+          <div class="icon">💡</div>
+          <h3>Inovação e Pesquisa</h3>
+          <p>O IEMA incentiva a participação dos alunos em projetos de inovação e pesquisa, oferecendo suporte e recursos para que possam desenvolver suas próprias iniciativas e aplicar conhecimentos práticos em desafios reais.</p>
+        </div>
+
+        <div class="info-box">
+          <div class="icon">📚</div>
+          <h3>Formação Integral</h3>
+          <p>No IEMA, o aluno é o protagonista de sua própria história. Investimos em programas que desenvolvem tanto as habilidades técnicas quanto as pessoais dos estudantes, incentivando a autonomia e o desenvolvimento integral.</p>
+        </div>
       </div>
     </div>
+  </div>
 
+  <div class="alunos_protagonistas">
+    <div>
+      <h1>Alunos protagonistas</h1>
+    </div>
+    <div class="prot1">
+      <img src="./assets/ptgnt.1.png" alt="">
+      <img src="./assets/ptgnt.2.png" alt="">
+      <img src="./assets/ptgnt.3.png" alt="">
+    </div>
+    <div class="prot1">
+      <img src="./assets/ptgnt.4.png" alt="">
+      <img src="./assets/ptgnt.5.png" alt="">
+      <img src="./assets/ptgnt.6.png" alt="">
+    </div>
   </div>
 
 
@@ -131,6 +153,54 @@
 
 
 
+
+
+
+
+
+
+
+
+
+<h2>Projetos</h2>
+  <div class="slideshow-container" id="slideshow-projetos">
+    <div class="slide active">
+      <div class="slide_fira">
+        <img src="./assets/FIRA2024.png" alt="foto oficial fira 2024" />
+        <div>
+          <h2> FIRA  RoboWorld Cup</h2>
+          <p>A FIRA é uma das maiores competições de robótica do mundo, e o IEMA tem se destacado com conquistas importantes, como o vice-campeonato mundial em 2023. Em 2024, o Maranhão sediou a RoboWorld Cup FIRA com 22 países, e em 2025, o IEMA organizou a etapa estadual do FIRA Brasil. As ações reforçam o papel do instituto na promoção da robótica e da educação tecnológica.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="slide_saap">
+        <img src="./assets/saap.sistema_de_alimentacao.png" alt="foto oficial do projeto saap, sistema de alimentacao automatica para peixes" />
+        <div>
+          <h2>Sistema de Alimentação Automática de Peixes</h2>
+          <p>O SAAP é um sistema desenvolvido para alimentar automaticamente peixes de aquário. Funciona com bateria ou energia elétrica e foi criado com foco em praticidade e sustentabilidade, usando tecnologia e programação para garantir a alimentação regular dos pets aquáticos.</p>
+        </div>
+      </div>
+    </div>
+    
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
   <script src="carousel.js"></script>
 </body>
 </html>
