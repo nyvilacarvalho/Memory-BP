@@ -105,6 +105,24 @@ h2 {
   text-align: center;
 }
 
+  .rodape-conteudo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .rodape-logo p,
+  .rodape-logo img,
+  .rodape-contato p {
+    max-width: 90%;
+    margin: auto;
+  }
+
+  .rodape-mapa iframe {
+    width: 100%;
+    height: 200px;
+  }
+
   }
 
 
