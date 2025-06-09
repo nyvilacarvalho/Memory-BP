@@ -9,6 +9,7 @@
     gap: 10px;
     height: auto;
     font-size: 10px;
+    margin-left: 90px;
   }
   
   .img {
@@ -27,6 +28,7 @@
     flex-direction: column;
     text-align: center;
     padding: 50px 5px 5px;
+    margin-bottom: 50px
   }
 
   .conteudo .inicio img{
@@ -103,4 +105,15 @@ h2 {
   text-align: center;
 }
 
+  }
+
+
+  @media (max-width: 470px) {
+
+  .navegador ul {
+    gap: 10px;
+    height: auto;
+    font-size: 7px;
+    margin-left: 90px;
+  }
   }
