@@ -140,6 +140,27 @@ html, body {
   max-width: 400px;
 }
 
+/* Envolve o texto e as imagens pequenas */
+.info-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Galeria de imagens redondas pequenas */
+.info-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.info-gallery img {
+  width: 120px;
+  height: auto;
+}
+
 /*botoes  nao mecher*/ 
 button.prev,
 button.next {

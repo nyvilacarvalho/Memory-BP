@@ -123,6 +123,11 @@ h2 {
     height: 200px;
   }
 
+
+.info-gallery img {
+  width: 120px;
+  height: auto;
+}
   }
 
 
