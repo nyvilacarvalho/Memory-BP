@@ -1,6 +1,6 @@
 # Memory Bp
 
-Designer por: Camila de Abrel e Marjory Laise <br>
+Designer por:Marjory Laise <br>
 front-end por: Isadora Cabral e Nyvila Carvalho
 
 https://nyvilacarvalho.github.io/Memory-BP/
